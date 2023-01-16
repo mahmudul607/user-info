@@ -1,0 +1,16 @@
+
+.person{
+    font-size: 15px;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.person img{
+    width: 10%;
+    height: auto;
+    border: 5px solid green;
+    border-radius: 50%;
+    margin: 5px;
+}
