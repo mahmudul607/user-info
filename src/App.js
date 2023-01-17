@@ -11,10 +11,7 @@ function App() {
   const [person, setPerson] = useState([]);
 
   useEffect(() => {
-
     setUsers(data)
-
-
   }, [])
 
   const addUser = (user) => {
@@ -25,9 +22,25 @@ function App() {
   return (
     <div>
       <header >
-        <img className='logo' src={logo} alt="" />
-
-        <h2>Users: {users.length}</h2>
+      <img className='logo' src={logo} alt="" />
+        <div className='body-top'>
+          <div>
+            <nav>
+              <ul>
+                <a href="./home">Home</a>
+                <a href="./users">Users</a>
+                <a href="./addedperson">Added Person</a>
+                <a href="./About us">About Us</a>
+              </ul>
+            </nav>
+          </div>
+          <div className='added-cart'>
+            <Count person={person}></Count>
+          </div>
+        </div>
+        <div>
+          <h2>Users: {users.length}</h2>
+        </div>
         <div className='userbody'>
           <div className='user-card'>
             {
@@ -36,12 +49,13 @@ function App() {
 
           </div>
           <div>
-            <Count person={person}></Count>
+
           </div>
         </div>
       </header>
     </div>
   );
+
 }
 
 export default App;

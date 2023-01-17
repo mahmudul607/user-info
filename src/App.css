@@ -1,5 +1,16 @@
+.added-cart{
+  
+  text-align: left;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .userbody{
   display: flex;
+}
+.body-top{
+  display: flex;
+  justify-content: space-around;
+
 }
 .user-card{
   width: 70%;
@@ -8,8 +19,28 @@
   margin-bottom: 20px;
 }
 .logo{
-  width: 200px;
-  height: 150px;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 10%;
+  
+}
+header ul a{
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: gray;
+}
+header ul a:hover{
+  color: goldenrod;
+
+}
+
+header ul{
+  display: flex;
 }
 
 

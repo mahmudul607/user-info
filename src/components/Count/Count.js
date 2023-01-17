@@ -11,17 +11,15 @@ for (let i = 0; i < person.length; i++) {
     const select = person[i];
     totalYearlySalary = totalYearlySalary + select.salary;
 }
-let [id, name, salary] = ['','',''];
+let [id, name, salary] = [[],[],[]];
 
 for (let i = 0; i < person.length; i++) {
     const info = person[i];
-    id = id + ',' + info.id;
-    name = name + ',' + info.name;
-    salary = salary + ',' + info.salary;
+  
+        id = id + info.id + ',';
+        name = name + info.name + ',';
+        salary = salary + info.salary + ',';
 }
-
-
-
     return (
         <div className="Count">
             
@@ -30,7 +28,7 @@ for (let i = 0; i < person.length; i++) {
             <div>
                 <p>Id: {id}</p>
                 <p>Name: {name}</p>
-                <p>Age: {salary}</p>
+                <p>Salary: {salary}</p>
             </div>
         </div>
        
